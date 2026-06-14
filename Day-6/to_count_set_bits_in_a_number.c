@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+int main() {
+int n,count=0;
+printf("Enter a number: ");
+scanf("%d", &n);
+int temp = n;   
+while (n > 0) {
+n = n & (n - 1); 
+count++;
+}
+printf("Number of set bits (1s) in %d is: %d", temp, count);
+getch();
+return 0;
+}
